@@ -46,6 +46,5 @@ if go:
     else:
         st.warning('Sorry there is no data to upload!')
     
-    pr = ProfileReport(df, title="Summary Report on Dataset")
+    ProfileReport(df, title="Summary Report on Dataset")
 
-    st_profile_report(pr)
