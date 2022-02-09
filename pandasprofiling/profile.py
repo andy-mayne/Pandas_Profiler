@@ -44,6 +44,6 @@ if go:
             st.warning('Sorry there is no data to upload!')
     
 
-        pr = df.profile_report()
+    pr = df.profile_report()
 
-        st_profile_report(pr)
+    st_profile_report(pr)
