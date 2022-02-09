@@ -34,16 +34,17 @@ uploaded_file = st.file_uploader(label='Upload a your data', type=('.csv', '.xls
 go = st.button('Submit data')
 
 if go:
-
-    with st.spinner('Uploading your data'):
-        if '.xlsx' in uploaded_file.name:
-            df = pd.read_excel(uploaded_file)
-        elif '.csv' in uploaded_file.name:
-            df = pd.read_csv(uploaded_file)
-        else:
-            st.warning('Sorry there is no data to upload!')
     
+    if uploaded_file != None:
 
+        with st.spinner('Uploading your data'):
+            if '.xlsx' in uploaded_file.name:
+                df = pd.read_excel(uploaded_file)
+            elif '.csv' in uploaded_file.name:
+                df = pd.read_csv(uploaded_file)
+    else:
+        st.warning('Sorry there is no data to upload!')
+    
     pr = df.profile_report()
 
     st_profile_report(pr)
