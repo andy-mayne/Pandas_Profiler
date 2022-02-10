@@ -7,13 +7,13 @@ import PIL
 
 st.set_page_config(page_title='page_title',layout="wide", page_icon='🐼')
 st.image("pandasprofiling/images/logo.png", width=200)
-st.markdown("## Pandas profiler for summary statistics")
+st.markdown("## NHS Open Source Library - Pandas profiler for summary statistics")
 
 with st.expander("What is the Pandas Profiler?"):
 
 
     st.image("pandasprofiling/images/pandas_profiler_logo.png", width=600)
-    st.markdown(''' **Pandas profiler was created by Simon Brugman, weve just made it a bit easy to use for those who havent used python!**
+    st.markdown(''' **Pandas profiler was created by Simon Brugman, weve just made it a bit easier to use for those who havent used python!**
      
 Generates profile reports from a pandas DataFrame. The pandas df.describe() function is great but a little basic for serious exploratory data analysis. pandas_profiling extends the pandas DataFrame with df.profile_report() for quick data analysis.For each column the following statistics - if relevant for the column type - are presented in an interactive HTML report:
 
