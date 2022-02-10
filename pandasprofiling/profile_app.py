@@ -9,7 +9,7 @@ st.set_page_config(page_title='page_title',layout="wide", page_icon='🐼')
 st.image("pandasprofiling/images/logo.png", width=200)
 st.markdown("## NHS Open Source Library - Pandas profiler for summary statistics")
 
-with st.expander("What is the Pandas Profiler?"):
+with st.expander("What is Pandas Profiling?"):
 
 
     st.image("pandasprofiling/images/pandas_profiler_logo.png", width=600)
