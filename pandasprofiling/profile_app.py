@@ -31,7 +31,7 @@ Generates profile reports from a pandas DataFrame. The pandas df.describe() func
 https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/
 ''')
 
-uploaded_file = st.file_uploader(label='Upload a your data', type=('.csv', '.xlsx'))
+uploaded_file = st.file_uploader(label='Upload some data', type=('.csv', '.xlsx'))
 go = st.button('Submit data')
 
 if go:
